@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = 'Different date operations, primarily around business days.'
   s.authors     = ['Michael Schwarze']
   s.email       = 'michael@schwarze-web.de'
-  s.files       = ['lib/dateoperations.rb']
+  s.files       = ['lib/dateoperations.rb', 'README.md', 'Rakefile', 'test/dateoperations_test.rb', 'test/test_helper.rb']
   # s.homepage    = 'http://rubygems.org/gems/dateoperations'
   s.license     = 'MIT'
 end
