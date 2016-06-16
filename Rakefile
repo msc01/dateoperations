@@ -1,5 +1,6 @@
 require 'rake/testtask'
 require 'rubocop/rake_task'
+require 'rdoc/task'
 
 Rake::TestTask.new do |t|
   t.pattern = 'test/*_test.rb'
@@ -7,7 +8,10 @@ end
 
 RuboCop::RakeTask.new
 
-desc 'test'
+RDoc::Task.new do |rdoc|
+  rdoc.rdoc_files.include('lib')
+end
 
 task default: :test
+task default: :rdoc
 task default: :rubocop

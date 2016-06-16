@@ -26,3 +26,6 @@ Download the gem, then install it:
 	DateOperations.number_of_business_days_between(Date.new(2016, 10, 1), Date.new(2016, 10, -1)) #=> 21
 	
 	DateOperations.weekend?(DateOperations.weekend?(Date.new(2016, 6, 18)) #=> true
+
+## Documentation
+[Documentation](http://dateoperations.schwarze-web.de/DateOperations.html)
