@@ -4,7 +4,7 @@
 Date Operations
 
 ## Synopsis
-	getcolact
+	DateOperations.[...]
 	
 ## Description
 Different date operations, primarily around business days
