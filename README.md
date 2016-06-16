@@ -22,6 +22,7 @@ then install it:
 	DateOperations.holiday?(Date.new(2016, 10, 3)) #=> true
 	DateOperations.country = :us #=> :us
 	DateOperations.holiday?(Date.new(2016, 10, 3)) # => false
+	DateOperations.country = :de #=> :de
 	DateOperations.number_of_business_days_between(Date.new(2016, 10, 1), Date.new(2016, 10, -1)) #=> 20
-	DateOperations.country = :us #=> :us
+	DateOperations.country = :au #=> :au
 	DateOperations.number_of_business_days_between(Date.new(2016, 10, 1), Date.new(2016, 10, -1)) #=> 21
