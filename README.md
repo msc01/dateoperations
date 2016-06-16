@@ -5,8 +5,7 @@ Different date operations, primarily around business days; based on the [Holiday
 	DateOperations.[...]
 	
 ## Installation
-Download the gem, 
-then install it:
+Download the gem, then install it:
 
 	gem install dateoperations.gemspec
 
