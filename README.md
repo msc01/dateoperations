@@ -1,14 +1,9 @@
 # DateOperations
-
-## Summary
-Date Operations
+Different date operations, primarily around business days; based on the [Holidays Gem](https://github.com/holidays/holidays).
 
 ## Synopsis
 	DateOperations.[...]
 	
-## Description
-Different date operations, primarily around business days.
-
 ## Installation
 Download the gem, 
 then install it:
