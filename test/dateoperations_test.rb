@@ -16,10 +16,10 @@ class DateOperationsTest < Minitest::Test
     assert_equal 21, DateOperations.number_of_business_days_between(d1, d2)
   end
 
-  def test_november_2016_has_21_business_days
+  def test_november_2016_has_22_business_days
     d1 = Date.new(2016, 11, 1)
     d2 = Date.new(2016, 11, -1)
-    assert_equal 21, DateOperations.number_of_business_days_between(d1, d2)
+    assert_equal 22, DateOperations.number_of_business_days_between(d1, d2)
   end
 
   def test_24th_of_december_2016_is_a_holiday
