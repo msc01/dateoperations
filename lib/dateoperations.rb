@@ -6,7 +6,7 @@ require 'holidays'
 # - Home[https://github.com/msc01/dateoperations]
 # - Documentation[http://dateoperations.schwarze-web.de/DateOperations.html]
 class DateOperations
-  @country = :de
+  @country  = :de
 
   class << self
     # Switches to the calendar of the respective country:
@@ -28,14 +28,14 @@ class DateOperations
     week_days.length
   end
 
-  # Returns an array with dates for the business days (week days (Monday to Friday) without <tt>holidays</tt>).
+  # Returns an array with dates for the business days (week days (Monday to Friday) without holidays).
   # between a given start and end date.
   def self.business_days_between(start_date, end_date)
     week_days = week_days_between(start_date, end_date)
     week_days.reject { |b| holiday?(b) }
   end
 
-  # Returns the number of business days (week days (Monday to Friday) without <tt>holidays</tt>).
+  # Returns the number of business days (week days (Monday to Friday) without holidays).
   # between a given start and end date.
   def self.number_of_business_days_between(start_date, end_date)
     business_days = business_days_between(start_date, end_date)
@@ -47,7 +47,7 @@ class DateOperations
     date.saturday? || date.sunday?
   end
 
-  # Checks whether a given date is a holiday based on the calendar for the respective <tt>country</tt>.
+  # Checks whether a given date is a holiday based on the calendar for the respective country.
   def self.holiday?(date)
     return false if Holidays.on(date, DateOperations.country, :informal).empty?
     true

@@ -4,6 +4,17 @@ require_relative 'test_helper'
 
 # Test class for Minitest Unit Tests for class DateOperations
 class DateOperationsTest < Minitest::Test
+  def setup
+    DateOperations.country = 'de'
+  end
+
+  def test_2020_has_248_business_days_in_de_by
+    DateOperations.country  = 'de_by'
+    d1 = Date.new(2020, 1, 1)
+    d2 = Date.new(2020, 12, -1)
+    assert_equal 248, DateOperations.number_of_business_days_between(d1, d2)
+  end
+
   def test_december_2016_has_22_week_days
     d1 = Date.new(2016, 12, 1)
     d2 = Date.new(2016, 12, -1)
