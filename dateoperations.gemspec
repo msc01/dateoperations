@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Michael Schwarze']
   s.email       = 'michael@schwarze-web.de'
   s.files       = ['lib/dateoperations.rb', 'lib/dateoperations/version.rb', 'README.md', 'LICENSE.txt']
-  s.homepage    = 'https://github.com/msc01/dateoperations'
+  s.homepage    = 'https://codeberg.org/msc01/dateoperations'
   s.license     = 'MIT'
   s.metadata['rubygems_mfa_required'] = 'true'
 end

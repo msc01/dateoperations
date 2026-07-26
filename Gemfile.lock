@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dateoperations (0.1.0)
+    dateoperations (0.1.1)
       holidays (~> 11)
 
 GEM
@@ -83,7 +83,7 @@ DEPENDENCIES
 
 CHECKSUMS
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
-  dateoperations (0.1.0)
+  dateoperations (0.1.1)
   drb (2.2.3) sha256=0b00d6fdb50995fe4a45dea13663493c841112e4068656854646f418fda13373
   erb (6.0.6) sha256=a9b24986700f5bf127c4f297c5403c3ca41b83b0a316c0cd09a096b56e644ae5
   holidays (11.1.0) sha256=e99e5ace60a392792ac5288590248deb4c9e4edec900abea0c6d666cbbaf176e
@@ -118,4 +118,4 @@ RUBY VERSION
   ruby 4.0.1
 
 BUNDLED WITH
-  4.0.8
+  4.0.17

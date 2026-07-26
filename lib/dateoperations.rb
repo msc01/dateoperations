@@ -6,7 +6,7 @@ require_relative 'dateoperations/version'
 
 ##
 # Different date operations, primarily around business days, based on the Holidays[https://github.com/holidays/holidays] Gem.
-# - Home[https://github.com/msc01/dateoperations]
+# - Home[https://codeberg.org/msc01/dateoperations]
 # - Documentation[http://dateoperations.schwarze-web.de/DateOperations.html]
 class DateOperations
   @country = :de
