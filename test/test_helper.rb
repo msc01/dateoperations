@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'simplecov'
-SimpleCov.start do
-  add_filter '/test/'
-end
+SimpleCov.start
+SimpleCov.skip '/test/'
 
 require 'minitest/autorun'
 

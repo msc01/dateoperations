@@ -2,3 +2,5 @@
 /test/coverage
 /doc
 /html
+.DS_Store
+*.gem

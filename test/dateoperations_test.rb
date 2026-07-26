@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require_relative 'test_helper'
 
@@ -9,7 +10,7 @@ class DateOperationsTest < Minitest::Test
   end
 
   def test_2020_has_248_business_days_in_de_by
-    DateOperations.country  = 'de_by'
+    DateOperations.country = 'de_by'
     d1 = Date.new(2020, 1, 1)
     d2 = Date.new(2020, 12, -1)
     assert_equal 248, DateOperations.number_of_business_days_between(d1, d2)

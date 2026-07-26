@@ -1,12 +1,15 @@
+# frozen_string_literal: true
+
 require 'date'
 require 'holidays'
+require_relative 'dateoperations/version'
 
 ##
 # Different date operations, primarily around business days, based on the Holidays[https://github.com/holidays/holidays] Gem.
 # - Home[https://github.com/msc01/dateoperations]
 # - Documentation[http://dateoperations.schwarze-web.de/DateOperations.html]
 class DateOperations
-  @country  = :de
+  @country = :de
 
   class << self
     # Switches to the calendar of the respective country:
@@ -49,7 +52,6 @@ class DateOperations
 
   # Checks whether a given date is a holiday based on the calendar for the respective country.
   def self.holiday?(date)
-    return false if Holidays.on(date, DateOperations.country, :informal).empty?
-    true
+    Holidays.on(date, DateOperations.country, :informal).any?
   end
 end
