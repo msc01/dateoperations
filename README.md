@@ -1,5 +1,8 @@
 # DateOperations
 
+⚠️ **NOTICE: This project has moved to Codeberg!**  
+Active development, issue tracking, and releases have migrated to **[Codeberg](https://codeberg.org/msc01/dateoperations)**. Please use the new repository for any future contributions, issues, or pull requests.
+
 Different date operations, primarily around business days, based on the [Holidays Gem](https://github.com/holidays/holidays).
 
 ## Installation
